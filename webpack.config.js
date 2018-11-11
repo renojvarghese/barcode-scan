@@ -56,7 +56,8 @@ const config = {
             filename: "main.css"
         }),
         new HtmlWebpackPlugin({
-            template: "src/index.html"
+            template: "src/index.html",
+            title: "Barcode Prototype"
         })
     ]
 };
