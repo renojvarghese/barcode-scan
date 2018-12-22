@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="284px" height="232px" viewBox="0 0 284 232" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>camera-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="camera-icon" transform="translate(5.000000, 5.000000)" fill-rule="nonzero" stroke="#FFFFFF">
+            <g>
+                <rect id="Rectangle" stroke-width="6.5" x="82.6555819" y="82.6803519" width="109.339667" height="56.6392962" rx="5.2"></rect>
+                <ellipse id="Oval" stroke-width="9.1" cx="135.698337" cy="111" rx="28.3111639" ry="28.3196481"></ellipse>
+                <ellipse id="Oval" stroke-width="6.5" cx="135.372922" cy="110.674487" rx="14.3182898" ry="14.3225806"></ellipse>
+                <polyline id="Path-5" stroke-width="9.75" stroke-linecap="round" stroke-linejoin="round" points="273.550038 151.038123 273.550038 221.952155 203.059382 221.952155"></polyline>
+                <polyline id="Path-5" stroke-width="9.75" stroke-linecap="round" stroke-linejoin="round" transform="translate(35.896159, 35.457016) rotate(180.000000) translate(-35.896159, -35.457016) " points="71.1414873 -7.10542736e-15 71.1414873 70.9140321 0.650831354 70.9140321"></polyline>
+                <polyline id="Path-5" stroke-width="9.75" stroke-linecap="round" stroke-linejoin="round" transform="translate(35.896159, 184.542060) rotate(90.000000) translate(-35.896159, -184.542060) " points="71.1520495 149.095666 71.1520495 219.988454 0.640269148 219.988454"></polyline>
+                <polyline id="Path-5" stroke-width="9.75" stroke-linecap="round" stroke-linejoin="round" transform="translate(237.653879, 35.457016) rotate(270.000000) translate(-237.653879, -35.457016) " points="272.909769 0.010622461 272.909769 70.9034096 202.397989 70.9034096"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

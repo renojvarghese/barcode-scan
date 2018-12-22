@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <ScanBarcode msg="This·is·your·Scan·Barcode" />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import ScanBarcode from "./components/ScanBarcode.vue";
 
 export default {
   name: "app",
   components: {
-    HelloWorld
+    ScanBarcode
   }
 };
 </script>
