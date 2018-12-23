@@ -1,14 +1,14 @@
 <template>
   <div class="scan">
-    <h1>{{ msg }}</h1>
+    <div class="pict-btn">
      <picture-input 
       ref="pictureInput"
-      width="600" 
-      height="600" 
-      margin="16" 
       accept="image/jpeg,image/png" 
-      size="10" 
+      width="450"
+      height="320"
+      :plain="true"
       />
+    </div>
   </div>
 </template>
 
@@ -17,9 +17,6 @@ import PictureInput from "vue-picture-input";
 
 export default {
   name: "ScanBarcode",
-  props: {
-    msg: String
-  },
   components: {
     PictureInput
   }
@@ -28,18 +25,23 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+.scan {
+  min-height:110vh;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.pict-btn {
+  margin:0 auto;
+  max-width: 450px;
+  max-height: 320px;
+  position:relative;
+  &:before {
+    content: "";
+    width:100%;
+    height:100%;
+    background: url("../assets/camera-icon.svg") no-repeat center center green;
+    position:absolute;
+    top:0;
+    left:0;
+
+  }
 }
 </style>

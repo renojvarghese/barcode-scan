@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <ScanBarcode msg="This·is·your·Scan·Barcode" />
+    <ScanBarcode />
   </div>
 </template>
 
@@ -21,7 +21,8 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  max-width: 786px;
+  margin: 0 auto;
+  box-shadow: 0 0 10px 1px rgba(0,0,0,0.05);
 }
 </style>
