@@ -1,6 +1,6 @@
 <template>
   <div class="scan">
-    <div class="pict-btn">
+    <div class="pict-btn" v-bind:class="{ hasImage: image}">
      <picture-input 
       ref="pictureInput"
       accept="image/jpeg,image/png" 
@@ -87,15 +87,31 @@ export default {
   max-width: 450px;
   max-height: 320px;
   position:relative;
-  &:before {
+  &:before, &:after{
     content: "";
     width:100%;
     height:100%;
-    background: url("../assets/camera-icon.svg") no-repeat center center green;
     position:absolute;
     top:0;
     left:0;
-
+    z-index:10003;
+    pointer-events: none;
+  }
+  &:before {
+    background: url("../assets/camera-icon.svg") no-repeat center center green;
+  }
+  &:after {
+    z-index: 10002;
+    background: black;
+    opacity:0;
+  }
+  &.hasImage {
+    &:before {
+      background: url("../assets/camera-icon.svg") no-repeat center center;
+    }
+    &:after {
+      opacity: .25;;
+    }
   }
 }
 </style>
