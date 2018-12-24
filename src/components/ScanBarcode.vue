@@ -1,5 +1,6 @@
 <template>
   <div class="scan">
+    <h3>Scan barcode from image</h3>
     <div class="pict-btn" v-bind:class="{ hasImage: image}">
      <picture-input 
       ref="pictureInput"
@@ -16,7 +17,6 @@
       {{error}}
     </div>
     <div v-if="barcode" class="barcode-container">
-      <h2 class="barcode-title">Barcode</h2>
       <div class="barcode">{{barcode}}</div>
     </div>
   </div>
@@ -80,9 +80,19 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+$green: #23D16F;
+$red: #E81300;
 .scan {
-  min-height:110vh;
+  min-height:80vh;
   padding:15pt;
+  padding-top:20vh;
+  padding-bottom: 0;
+}
+h3 {
+  margin:0;
+  font-size: 12pt;
+  font-weight: 400;
+  font-style: italic;
 }
 .pict-btn {
   margin:0 auto;
@@ -109,12 +119,13 @@ export default {
   }
   &:after {
     z-index: 10002;
-    background: green;
+    background: $green;
     opacity:1;
   }
   &.hasImage {
     &:before {
       background: url("../assets/camera-icon.svg") no-repeat cover center center;
+      opacity: .85;
     }
     &:after {
       background: black;
@@ -123,7 +134,7 @@ export default {
   }
 }
 .error {
-  color:red;
+  color:$red;
   font-size: 16pt;
   font-weight: 400;
   font-style: italic;
@@ -141,7 +152,7 @@ export default {
   font-size: 24pt;
 }
 .barcode {
-  color:green;
+  color:$green;
   font-size: 24pt;
   letter-spacing: 4pt;
   text-align: center;
